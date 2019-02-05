@@ -1,6 +1,8 @@
 from Graph import DirectedGraph, UndirectedGraph, Node
 from TopoSort import TopoSort
 from BFS import BFS
+
+
 def main():
     g = DirectedGraph()
     g.updateNeighbor(1,2)

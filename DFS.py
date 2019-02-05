@@ -8,7 +8,7 @@ class DFS:
         #mark that nodeID has been visited
         self.visited.add(nodeID)
         # get neighbor of nodeID
-        neighbors_of_nodeID=self.graph.getNode(nodeID).neighbors
+        neighbors_of_nodeID=self.graph[nodeID].getNeighbors()
         #make sure neighbors don't contain the node we have visited
         effective_neighbors=neighbors_of_nodeID-self.visited
         #add effective neighbors into the begining of the stack

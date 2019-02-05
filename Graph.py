@@ -1,6 +1,8 @@
 
 class UndirectedGraph:
     # Use an adjacency list representation
+    # uses a key, which is the node id in an integer value
+    # and also has a value, which is a Node object which contains a hashset of neighbors
     def __init__(self):
         self.nodes = {} # dictionary with key as the nodeID and the value as the Node object
 
@@ -42,7 +44,6 @@ class DirectedGraph:
     
     def getNode(self, nodeID):
         return self.nodes[nodeID]
-
 
 class Node:
     def __init__(self, nodeID):
